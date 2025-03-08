@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Excel Functions</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="excel.html">Excel</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <div class="excel-container">
+        <h2>Excel Functionality</h2>
+        <form id="excel-form">
+          <div class="form-group">
+            <label for="numbers">
+              Enter numbers separated by spaces:
+              <input type="text" id="numbers" required />
+            </label>
+          </div>
+
+          <div class="operation-group">
+            <label>
+              AutoSum
+              <input type="radio" name="operation" value="sum" checked />
+            </label>
+            <label>
+              Average
+              <input type="radio" name="operation" value="average" />
+            </label>
+            <label>
+              Minimum
+              <input type="radio" name="operation" value="min" />
+            </label>
+            <label>
+              Maximum
+              <input type="radio" name="operation" value="max" />
+            </label>
+          </div>
+
+          <button type="submit">Calculate</button>
+        </form>
+        <div id="result"></div>
+      </div>
+    </main>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
